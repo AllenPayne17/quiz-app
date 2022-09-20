@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/score_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scaleType="fitCenter"
+    android:visibility="visible"
+    tools:context=".ResultActivity">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textcat"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center|top"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="Large Text"-->
+    <!--        android:textColor="#ffffff"-->
+    <!--        android:textSize="50sp"-->
+    <!--        android:textStyle="italic" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textque"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="Large Text"-->
+    <!--        android:textColor="#ffffff"-->
+    <!--        android:textSize="50sp"-->
+    <!--        android:textStyle="italic" />-->
+
+
+    <TextView
+        android:id="@+id/textRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/cartoon_relief"
+        android:gravity="center"
+        android:rotation="-15"
+        android:singleLine="true"
+        android:text="Large Text"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="80sp"
+        app:fontFamily="@font/cartoon_relief" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <Button
+            android:id="@+id/rcategory"
+            android:layout_width="310.963dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+
+            android:background="@drawable/playagain"
+            android:onClick="playAgain"
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/rcontinue"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/menu"
+        android:onClick="endGame"
+        android:textColor="#000000"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</LinearLayout>
